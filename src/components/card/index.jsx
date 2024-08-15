@@ -3,7 +3,7 @@ import size from "../../assets/size.png";
 import bed from "../../assets/bed.png";
 import car from "../../assets/carro-esporte.png";
 
-export default function Card({
+export default function Card({ // Componente do Card de cada Imóvel, que recebe os parâmetros para sua composição 
   preco,
   rua,
   bairro,
