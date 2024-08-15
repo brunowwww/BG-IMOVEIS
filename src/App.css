@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.PagInicial {
+  align-items: center;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  width: 100%;
+}
+.containerQuantidadeOrdenacao {
   align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline-flex;
+  height: 10%;
+  justify-content: space-between;
+  margin-top: 5%;
+  padding: 1rem;
+  width: 90%;
+}
+.textoImoveisDisponiveis {
+}
+
+.containerOrdenacao {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  /* width: 25%; */
+}
+
+.textoOrdenacao {
+  font-size: 1.2em;
+}
+
+.selecionarOrdenacao {
+  font-size: 1em;
+  padding: 1em;
+  /* width: 50%; */
+}
+
+.selecionarOrdenacao option {
+}
+
+.containerCards {
+  border-radius: 5px;
+  display: flex;
+  height: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 2vh;
+  overflow-y: scroll;
+  padding: 1%;
+  width: 90%;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
 }

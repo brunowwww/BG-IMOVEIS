@@ -1,0 +1,44 @@
+.containerCard {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  justify-content: center;
+  margin-bottom: 40px;
+  width: 25%;
+}
+.imagem {
+  /* float: left; */
+  border-radius: 10px;
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+}
+.infos {
+  width: 90%;
+}
+.preco {
+  font-size: 1.3em;
+}
+
+.endereco {
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Número de linhas permitidas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.especificacoes {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.metragem, .dorms, .vagas {
+  display: flex;
+}
+.imgMetragem, .imgDorms, .imgCar {
+  width: 22px;
+}
+
