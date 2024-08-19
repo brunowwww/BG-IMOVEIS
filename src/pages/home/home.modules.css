@@ -1,0 +1,116 @@
+.containerImagemCards {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 80%),
+    url("../../assets/home/cidade.jpg");
+  height: 690px;
+  background-size: cover;
+  justify-content: center;
+  background-position-x: 60%;
+
+  .textoCards {
+    flex: 1;
+    padding: 120px 0 80px 0;
+    align-items: center;
+    flex-direction: column;
+    .textoPrincipal {
+      color: #ffffff;
+      text-align: center;
+      line-height: 32px;
+      letter-spacing: -0.6px;
+
+      h1 {
+        font-size: 56px;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: center;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        span {
+          color: var(--main-color);
+        }
+      }
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+/* ===============Media queries section=============== */
+
+@media (min-width: 0px) {
+  .containerImagemCards {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 80%),
+      url("../../assets/home/cidade.jpg");
+    height: 100%;
+    background-size: cover;
+    justify-content: center;
+    background-position-x: 60%;
+    .textoCards {
+      .textoPrincipal {
+        color: #ffffff;
+        text-align: center;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+
+        h1 {
+          font-size: 32px;
+          line-height: 40px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .containerImagemCards {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 80%),
+      url("../../assets/home/cidade.jpg");
+    height: 100%;
+    background-size: cover;
+    justify-content: center;
+    background-position-x: 60%;
+    .textoCards {
+      .textoPrincipal {
+        color: #ffffff;
+        text-align: center;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+
+        h1 {
+          font-size: 40px;
+          line-height: 38px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+    .containerImagemCards {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 80%),
+          url("../../assets/home/cidade.jpg");
+        height: 100%;
+        background-size: cover;
+        justify-content: center;
+        background-position-x: 60%;
+        .textoCards {
+          .textoPrincipal {
+            color: #ffffff;
+            text-align: center;
+            line-height: 32px;
+            letter-spacing: -0.6px;
+    
+            h1 {
+              font-size: 56px;
+              line-height: 36px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+}
+/* ===============/Media queries section=============== */

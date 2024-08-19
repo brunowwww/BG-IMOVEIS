@@ -1,9 +1,10 @@
-import "./card.css";
-import size from "../../assets/size.png";
-import bed from "../../assets/bed.png";
-import car from "../../assets/carro-esporte.png";
+import "./card.modules.css";
+import size from "../../assets/card/size.png";
+import bed from "../../assets/card/bed.png";
+import car from "../../assets/card/carro-esporte.png";
 
-export default function Card({ // Componente do Card de cada Imóvel, que recebe os parâmetros para sua composição 
+export default function Card({
+  // Componente do Card de cada Imóvel, que recebe os parâmetros para sua composição
   preco,
   rua,
   bairro,
@@ -14,13 +15,18 @@ export default function Card({ // Componente do Card de cada Imóvel, que recebe
 }) {
   return (
     <div className="containerCard">
-      <img className="imagem" src={img} />
-
+      <img className="imagem" src={img} />{" "}
+      {/* Imagem do card, que é recebida por meio de parâmetros */}
+      {/* div de informações do card */}
       <div className="infos">
-        <p className="preco">R$ {preco.toLocaleString("pt-BR")}</p>
+        <p className="preco">R$ {preco.toLocaleString("pt-BR")}</p>{" "}
+        {/* preço exibido no card por meio de parâmetro  (preco.toLocaleString("pt-BR") serve pora colocarmos os . e , correspondentes na visualização do card)*/}
         <p className="endereco">
           {rua}, {bairro}
-        </p>
+        </p>{" "}
+        {/*Endereço exibido no card por meio de dois parâmetros, o de RUA e o Bairro do imóvel */}
+
+        {/*Div de especificações, como a metragem, dormitorios e vagas do imóvel */}
         <div className="especificacoes">
           <div className="metragem">
             <img alt="metragem" className="imgMetragem" src={size} />
@@ -41,7 +47,9 @@ export default function Card({ // Componente do Card de cada Imóvel, que recebe
             <></>
           )}
         </div>
+        {/*Div de especificações, como a metragem, dormitorios e vagas do imóvel */}
       </div>
+      {/* /div de informações do card */}
     </div>
   );
 }

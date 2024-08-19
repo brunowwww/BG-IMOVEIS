@@ -1,0 +1,108 @@
+@import "../../index.css";
+
+.containerHeader {
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #0000001a;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 0.5rem;
+  top: 0;
+  width: 100%;
+
+  .logo {
+    color: var(--text-color);
+    cursor: default;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+
+  .containerHeader a,
+  .navbar {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+  }
+  .containerHeader a:hover {
+    color: var(--main-color);
+  }
+  .navbar a,
+  .navbar-responsive a {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+  }
+  .navbar a:hover,
+  .navbar-responsive a:hover {
+    color: var(--main-color);
+  }
+  .navbar-responsive {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--bg-color-1);
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    background-color: var(--text-color);
+    height: 0.3rem;
+    margin: 0.4rem 0;
+    padding: 0;
+    transition: 0.3s ease;
+    width: 2rem;
+  }
+  .change .bar1 {
+    transform: translate(0, 0.65rem) rotate(-45deg);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    transform: translate(0, -0.65rem) rotate(45deg);
+  }
+  
+  .imgUser {
+    width: 2em;
+  }
+}
+
+/* ==========Media Screen========== */
+@media (min-width: 0px) {
+  .menu-hamburguer {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-responsive a {
+    display: block;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-hamburguer {
+    display: none;
+  }
+
+  .navbar {
+    align-items: center;
+    display: flex;
+  }
+
+  .navbar-responsive,
+  .navbar-responsive a {
+    display: none;
+  }
+}
+/* ==========/Media Screen========== */
