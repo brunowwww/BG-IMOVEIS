@@ -12,7 +12,7 @@ export default function Header() {
     const header = document.querySelector(".containerHeader"); // seleciona a div de container do cabeçalho
     menuHamburguer?.classList.toggle("change"); // "desliga" a classe 'change' do menu-hamburguer
 
-    if (menuHamburguer.classList.contains("change")) {
+    if (menuHamburguer?.classList.contains("change")) {
       // se o menu hamburguer possui a classe 'change'
       nav.style.display = "block"; // muda a navbar responsiva de invisivel para visivel
       header.style.position = "absolute"; //muda a posicao do cabeçalho por causa da nav responsiva

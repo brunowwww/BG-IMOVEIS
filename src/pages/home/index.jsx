@@ -3,6 +3,7 @@ import HomeCard from "../../components/homeCard";
 import pool from "../../assets/home/piscina.jpg";
 import gym from "../../assets/home/gym.jpg";
 import "./home.modules.css";
+import Footer from "../../components/footer";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
         </div>
       </section>
       {/* /Seção que comporta os Cards do menu e a imagem de fundo */}
+      <Footer />
     </div>
   );
 }

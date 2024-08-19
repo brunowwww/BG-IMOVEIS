@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import Card from "../../components/card";
 import Header from "../../components/header";
 import api from "../../services/api";
-import './imoveis.modules.css';
+import "./imoveis.modules.css";
+import Footer from "../../components/footer";
 
 export default function Imoveis() {
   const [ArrImoveis, setArrImoveis] = useState(); //Declara o State que vai receber a resposta da API (Esse State é alterado na ordenação)
@@ -20,7 +21,6 @@ export default function Imoveis() {
       });
   }, []);
   let imoveis = []; // Declara uma variável com uma array vazia, que receberá os componentes que aparecerão na tela
-
   ArrImoveis?.map((imovel) => {
     // mapeia o State para pegar cada posição da array
     const cardImovel = (
@@ -87,6 +87,7 @@ export default function Imoveis() {
       </section>
       {/* ==============/Section dos Cards dos imóveis============== */}
       {/* Componente do Rodapé */}
+      <Footer />
       {/* /Componente do Rodapé */}
     </div>
   );
