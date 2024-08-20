@@ -1,5 +1,4 @@
 import Header from "../../components/header";
-import work from "../../assets/sobre/work.jpg";
 import "./sobre.modules.css";
 import Footer from "../../components/footer";
 
@@ -7,9 +6,6 @@ export default function Sobre() {
   return (
     <div>
       <Header />
-      <section>
-        {/* <img className="imagemSobre" src={work} alt="fot de pessoas trabalhando" /> */}
-      </section>
       <article className="containerSobre">
         <h1>Sobre a BG Imóveis</h1>
         <p>

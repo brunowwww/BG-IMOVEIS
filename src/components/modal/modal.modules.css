@@ -1,0 +1,21 @@
+.containerModal {
+  align-items: center;
+  background-color: #000000a3;
+  display: none;
+  justify-content: center;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  overflow-y: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+
+  .containerModal_conteudo {
+    background-color: var(--bg-color-1);
+    border-radius: 15px;
+    color: var(--font-color);
+    padding: 1.5rem;
+    width: 80%;
+  }
+}

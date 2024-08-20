@@ -4,7 +4,7 @@ import instagram from "../../assets/footer/instagram.png";
 import linkedin from "../../assets/footer/linkedin.png";
 import facebook from "../../assets/footer/facebook.png";
 
-export default function Footer() {
+export default function Footer() { // Componente de footer
   return (
     <>
       <div className="containerFooter">

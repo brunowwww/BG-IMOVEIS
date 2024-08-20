@@ -5,6 +5,7 @@ import car from "../../assets/card/carro-esporte.png";
 
 export default function Card({
   // Componente do Card de cada Imóvel, que recebe os parâmetros para sua composição
+  id,
   preco,
   rua,
   bairro,
@@ -12,9 +13,10 @@ export default function Card({
   dorms,
   vagas,
   metragem,
+  onclick,
 }) {
   return (
-    <div className="containerCard">
+    <div className="containerCard" id={id} onClick={onclick}>
       <img className="imagem" src={img} />{" "}
       {/* Imagem do card, que é recebida por meio de parâmetros */}
       {/* div de informações do card */}

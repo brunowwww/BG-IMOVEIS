@@ -1,6 +1,6 @@
 import "./homeCard.modules.css";
 
-export default function HomeCard({ titulo, subtitulo, texto, foto }) {
+export default function HomeCard({ titulo, subtitulo, texto, foto }) { // componente de card da tela Home
   return (
     <>
       <div class="blog-card">

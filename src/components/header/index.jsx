@@ -7,6 +7,7 @@ export default function Header() {
   const menuHamburguer = document.querySelector(".menu-hamburguer"); // seleciona o elemento de menu-hamburguer, utilizado na responsividade da pagina
 
   function toggleMenu() {
+    debugger;
     //função de ativar/desativar o menu responsivo
     const nav = document.querySelector(".navbar-responsive"); // seleciona a navbar responsiva
     const header = document.querySelector(".containerHeader"); // seleciona a div de container do cabeçalho
@@ -46,13 +47,13 @@ export default function Header() {
         <a href="/">Home</a>
         <a href="/imoveis">Nossos Imóveis</a>
         <a href="/sobre">Sobre</a>
-        <a href="#User">
+        {/* <a href="#User">
           <img
             src={user}
             className="imgUser"
             alt="icone para ir para o login/cadastro"
           />
-        </a>
+        </a> */}
       </div>
       {/* /navbar que aparece em telas menores */}
       {/* Menu hamburguer que aparece em telas menores */}
