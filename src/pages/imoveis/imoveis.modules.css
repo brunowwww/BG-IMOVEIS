@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   .conteudo_modal_linhaFechaModal {
     align-items: center;
@@ -24,9 +24,8 @@ body {
   .containerMapa {
     align-items: center;
     background-color: #2020201a;
-    border-radius: 10px;
     display: flex;
-    height: 180px;
+    height: 100%;
     justify-content: center;
     width: 90%;
   }
